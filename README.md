@@ -1,9 +1,14 @@
 # go-prompt
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/elk-language/go-prompt)](https://goreportcard.com/report/github.com/elk-language/go-prompt)
+[![Go Report Card](https://goreportcard.com/badge/github.com/mu1ro/go-prompt)](https://goreportcard.com/report/github.com/mu1ro/go-prompt)
 ![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)
-[![GoDoc](https://godoc.org/github.com/elk-language/go-prompt?status.svg)](https://godoc.org/github.com/elk-language/go-prompt)
-![tests](https://github.com/elk-language/go-prompt/workflows/tests/badge.svg)
+[![GoDoc](https://godoc.org/github.com/mu1ro/go-prompt?status.svg)](https://godoc.org/github.com/mu1ro/go-prompt)
+![tests](https://github.com/mu1ro/go-prompt/workflows/tests/badge.svg)
+
+This is a fork of [elk-language/go-prompt](https://github.com/elk-language/go-prompt).
+
+---
+The README for the forked repository is as follows: 
 
 This is a fork of [c-bata/go-prompt](https://github.com/c-bata/go-prompt).
 It's a great library but it's been abandoned
