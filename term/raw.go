@@ -19,8 +19,8 @@ func SetRaw(fd int) error {
 	n.Iflag &^= syscall.IGNBRK | syscall.BRKINT | syscall.PARMRK |
 		syscall.ISTRIP | syscall.INLCR | syscall.IGNCR |
 		syscall.ICRNL | syscall.IXON
-	//n.Lflag &^= syscall.ECHO | syscall.ICANON | syscall.IEXTEN | syscall.ISIG | syscall.ECHONL
-	n.Lflag &^= syscall.ECHO | syscall.ICANON | syscall.IEXTEN | syscall.ECHONL
+	n.Lflag &^= syscall.ECHO | syscall.ICANON | syscall.IEXTEN | syscall.ISIG | syscall.ECHONL
+	//#x#n.Lflag &^= syscall.ECHO | syscall.ICANON | syscall.IEXTEN | syscall.ECHONL
 	n.Cflag &^= syscall.CSIZE | syscall.PARENB
 	n.Cflag |= syscall.CS8 // Set to 8-bit wide.  Typical value for displaying characters.
 	n.Cc[syscall.VMIN] = 1

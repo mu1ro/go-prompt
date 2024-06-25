@@ -207,9 +207,17 @@ func (p *Prompt) feed(b []byte) (shouldExit bool, rerender bool, userInput *User
 			p.history.Add(userInput.input)
 		}
 	case ControlC:
+		/***
 		p.renderer.BreakLine(p.buffer, p.lexer)
 		p.buffer = NewBuffer()
 		p.history.Clear()
+		***/
+		p.renderer.BreakLine(p.buffer, p.lexer)
+		userInput = &UserInput{input: p.buffer.Text()}
+		p.buffer = NewBuffer()
+		if userInput.input != "" {
+			p.history.Add(userInput.input)
+		}
 	case Up, ControlP:
 		line := p.buffer.Document().CursorPositionRow()
 		if line > 0 {
@@ -241,9 +249,14 @@ func (p *Prompt) feed(b []byte) (shouldExit bool, rerender bool, userInput *User
 		}
 		return false, true, nil
 	case ControlD:
+		/***
 		if p.buffer.Text() == "" {
 			return true, true, nil
 		}
+		***/
+		p.renderer.BreakLine(p.buffer, p.lexer)
+		p.buffer = NewBuffer()
+		p.history.Clear()
 	case NotDefined:
 		var checked bool
 		checked, rerender = p.handleASCIICodeBinding(b, cols, rows)

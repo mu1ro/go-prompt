@@ -102,12 +102,13 @@ Key Binding          | Description
 <kbd>Ctrl + N</kbd>  | Next command (Down arrow)
 <kbd>Ctrl + F</kbd>  | Forward one character
 <kbd>Ctrl + B</kbd>  | Backward one character
-<kbd>Ctrl + D</kbd>  | Delete character under the cursor
+<kbd>Ctrl + D</kbd>  | Clear the input buffer
 <kbd>Ctrl + H</kbd>  | Delete character before the cursor (Backspace)
 <kbd>Ctrl + W</kbd>  | Cut the word before the cursor to the clipboard
 <kbd>Ctrl + K</kbd>  | Cut the line after the cursor to the clipboard
 <kbd>Ctrl + U</kbd>  | Cut the line before the cursor to the clipboard
 <kbd>Ctrl + L</kbd>  | Clear the screen
+<kbd>Ctrl + C</kbd>  | Sends input to processing (same as Enter)
 
 ### History
 
