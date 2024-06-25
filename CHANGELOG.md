@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## [0.2.0] - 25.06.2024
+Change the following:
+
+Key Binding          | Description
+---------------------|---------------------------------------------------------
+<kbd>Ctrl + D</kbd>  | Clear the input buffer
+<kbd>Ctrl + C</kbd>  | Sends input to processing (same as Enter)
+
+To send a SIGINT to a program, press Ctrl + C twice quickly.
 
 ## [0.1.0] - 20.05.2024
 - enable SIGINT signal for abort
